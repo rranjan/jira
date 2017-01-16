@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
+from pip import req
 import setuptools
 from setuptools.command.test import test as TestCommand
 import sys
-from pip import req
 
 # In python < 2.7.4, a lazy loading of package `pbr` will break
 # setuptools if some other modules registered functions in `atexit`.
